@@ -8,6 +8,6 @@ There's an installation script which feeds the answers to the tool installer, **
 
 Build the container with the following command:
 
-'''
+```
 docker build -t pathway:23.0 .
-'''
+```
