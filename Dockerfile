@@ -11,7 +11,8 @@ RUN apt-get update && \
 COPY config/ptools-init.dat /opt/data/ptools-local/ptools-init.dat
 COPY config/install-pathway-tools.sh /opt/bin/install-pathway-tools.sh
 COPY config/run-pathway-tools.sh /opt/bin/run-pathway-tools.sh
-COPY pathway-tools/pathway-tools-$VERSION-linux-64-tier1-install /opt/bin/pathway-tools-$VERSION-linux-64-tier1-install
+COPY pathway-tools-install/pathway-tools-$VERSION-linux-64-tier1-install \
+    /opt/bin/pathway-tools-$VERSION-linux-64-tier1-install
 
 RUN /opt/bin/install-pathway-tools.sh
 
